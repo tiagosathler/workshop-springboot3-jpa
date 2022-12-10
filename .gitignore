@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Dev properties ###
+### use 'application-dev.properties.example' as example
+application-dev.properties
