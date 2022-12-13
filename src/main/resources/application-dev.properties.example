@@ -1,3 +1,8 @@
+## Configuration for MySQL Driver
+## Copy the following lines and paste them into the "application-dev.properties" file
+## (create it if it doesn't exist).
+## Then set the runtime to "dev" in the "application.properties" file. 
+
 spring.datasource.url=jdbc:mysql://localhost:3306/workshop_springboot
 
 spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
@@ -14,6 +19,28 @@ spring.jpa.show-sql=true
 spring.data.jpa.repositories.enabled=true
 
 spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+spring.jpa.properties.hibernate.format_sql=true
+
+jwt.secret=MYJWTSECRET
+jwt.expiration=3600000
+
+
+## Configuration for PostgreSQL
+## Copy the following lines and paste them into the "application-dev.properties" file
+## (create it if it doesn't exist).
+## Then set the runtime to "dev" in the "application.properties" file.
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/workshop_springboot
+
+spring.datasource.username=postgres
+spring.datasource.password=1234567
+
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+
+spring.jpa.hibernate.ddl-auto=update
+
+spring.jpa.show-sql=true
+
 spring.jpa.properties.hibernate.format_sql=true
 
 jwt.secret=MYJWTSECRET
